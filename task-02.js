@@ -9,6 +9,7 @@ const users = [
   { name: 'Lux', active: false },
 ];
 
+
 const toggleUserState = (allUsers, userName) => {
     const updatedUsers = allUsers.map(user =>
       user.name === userName ? { ...user, active: !user.active } : user,
